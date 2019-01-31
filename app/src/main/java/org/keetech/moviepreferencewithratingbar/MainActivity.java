@@ -45,10 +45,14 @@ public class MainActivity extends AppCompatActivity {
             btnFinish.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), ResultActivity.class); //getApplicationContext == Mainactivty.this 라고 써도됨
                     intent.putExtra("VoteCount", voteCount);
                     intent.putExtra("ImageName", imgName);
                     startActivity(intent);
+
+                    for(int i=0;i<voteCount.length;i++){
+                        voteCount[i] = 0;
+                    }
                 }
             });
 

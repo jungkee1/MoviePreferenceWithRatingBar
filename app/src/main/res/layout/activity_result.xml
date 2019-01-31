@@ -9,6 +9,14 @@
     android:gravity="center_horizontal"
     android:stretchColumns="0">
 
+    <ImageView
+        android:id="@+id/img"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:src="@drawable/pic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <TableRow>
         <TextView
             android:id="@+id/tv1"
