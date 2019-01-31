@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
             //9개의 이미지 버튼 객체 배열
             ImageView image[] = new ImageView[9];
-            //9개의 이미지 버튼 ID 배열
+            //9개의 이미지 버튼 ID 배열 // id값은 Integer형으로 저장되어있음(안드로이드 자체적으로)
             Integer imageId[] = {R.id.iv1, R.id.iv2, R.id.iv3, R.id.iv4, R.id.iv5, R.id.iv6, R.id.iv7, R.id.iv8, R.id.iv9};
 
             final String imgName[] = {"독서하는 소녀", "꽃장식 모자 소녀", "부채를 든 소녀", "이레느깡 단 베르양", "잠자는 소녀", "테라스의 두 자매", "피아노 레슨", "피아노 앞의 소녀들", "해변에서"};
