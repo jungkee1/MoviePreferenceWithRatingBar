@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             final String imgName[] = {"독서하는 소녀", "꽃장식 모자 소녀", "부채를 든 소녀", "이레느깡 단 베르양", "잠자는 소녀", "테라스의 두 자매", "피아노 레슨", "피아노 앞의 소녀들", "해변에서"};
 
             for(int i=0;i<imageId.length;i++){
-                final int index; //주의! 꼭 필요함..
+                final int index; //주의! 꼭 필요함.. 안주면 밑에 i가 final에 걸리기때문에 그걸 주게되면 값 변화를 못함. 그래서 index 주고 파이널함
                 index = i;
                 image[index] = findViewById(imageId[index]);
                 image[index].setOnClickListener(new View.OnClickListener() {
