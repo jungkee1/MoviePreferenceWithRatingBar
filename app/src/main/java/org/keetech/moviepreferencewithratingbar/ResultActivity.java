@@ -49,12 +49,12 @@ public class ResultActivity extends AppCompatActivity {
 
         ImageView img;
         img = findViewById(R.id.img);
-        int max = 0;
+        //int max = 0;
         int max_index =0;
         for(int i=0;i<voteResult.length;i++){
 
-            if(voteResult[i] > max) {// 최대값을 구할대는 배열을 돌리면서 좌항과 우항(초기값 0)을 두고 좌 우를 비교해서 좌항이 크다면 새로 받는 값에 좌항을 던져주는 3줄짜리 코드로 완벽하게 커버가능. if에 걸리지 않으면 max는 이전의 값이 그대로 고정이기 때문에 다만 이 문제에서 마지막에 신경쓸 부분은 배열[i] 값을 찾게 아니라 i 값을 찾아야함 그래서 max_index를 따로만들어서 '배열.[i]' 의 값을 받아 낼 때 'i'도 같이받아냄
-                max = voteResult[i];
+            if(voteResult[i] > voteResult[max_index]) {// 최대값을 구할대는 배열을 돌리면서 좌항과 우항(초기값 0)을 두고 좌 우를 비교해서 좌항이 크다면 새로 받는 값에 좌항을 던져주는 3줄짜리 코드로 완벽하게 커버가능. if에 걸리지 않으면 max는 이전의 값이 그대로 고정이기 때문에 다만 이 문제에서 마지막에 신경쓸 부분은 배열[i] 값을 찾게 아니라 i 값을 찾아야함 그래서 max_index를 따로만들어서 '배열.[i]' 의 값을 받아 낼 때 'i'도 같이받아냄
+               // max = voteResult[i];
                 max_index = i;
             }
         }
